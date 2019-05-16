@@ -111,7 +111,7 @@
     <routinesParameter id="_qzmVYHgIEeml89_n76RR8Q" name="TalendStringUtil"/>
     <routinesParameter id="_qzSzYHgIEeml89_n76RR8Q" name="TalendString"/>
   </parameters>
-  <node componentName="tRESTRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="256">
+  <node componentName="tRESTRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRESTRequest_1"/>
     <elementParameter field="TEXT" name="API_ID" show="false" value=""/>
     <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;http://localhost:8088/example1&quot;"/>
@@ -138,6 +138,7 @@
     <elementParameter field="CHECK" name="CONVERT_JSON_VALUES_TO_STRING" value="false"/>
     <elementParameter field="CHECK" name="EXPOSE_SWAGGER_SPEC" value="false"/>
     <elementParameter field="CHECK" name="INCLUDE_DOC_INTO_SWAGGER_SPEC" show="false" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="REST input"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="WRONG_CALLS" name="WRONG_CALLS">
       <column defaultValue="" key="false" length="255" name="uri" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
@@ -149,7 +150,7 @@
       <column comment="" key="false" length="-1" name="body" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="256">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_2"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
@@ -168,12 +169,13 @@
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="LABEL" value="Log Request"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="sync1" name="tLogRow_2">
       <column comment="" key="false" length="-1" name="body" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="512" sizeX="64" sizeY="32">
+  <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="256" sizeX="64" sizeY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tExtractJSONFields_1"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_noI-oHgLEeml89_n76RR8Q - metadata"/>
@@ -199,6 +201,7 @@
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
     <elementParameter field="CHECK" name="SPLIT_LIST" show="false" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="parse"/>
     <metadata connector="FLOW" label="metadata" name="tExtractJSONFields_1">
       <column comment="" key="false" length="-1" name="val" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
     </metadata>
@@ -209,7 +212,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="512">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="672" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -239,7 +242,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="608">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
@@ -266,7 +269,7 @@
       <column comment="" key="false" length="-1" name="val" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tAggregateRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="544">
+  <node componentName="tAggregateRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="928" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tAggregateRow_1"/>
     <elementParameter field="TABLE" name="GROUPBYS"/>
     <elementParameter field="TABLE" name="OPERATIONS">
@@ -284,7 +287,7 @@
       <column comment="" key="false" length="-1" name="rowCount" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="12" offsetLabelY="-82" posX="896" posY="288">
+  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="12" offsetLabelY="-82" posX="992" posY="416">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRESTResponse_1"/>
     <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_String"/>
     <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="200"/>
@@ -331,13 +334,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_8b3d9e42-765c-4ba2-b5e0-bc9820405283"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>75aBdtEL8jVqtBeAwyqTlkMjABiEubc2fQnwY7JVEk7+QTA7EomvVywhl/8ztD6G+2a6E2/9clZy
-0zAXU+YsLg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_902427ad-68fb-4d92-ac2c-86ac4416f8f9"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>b2bCFGjKpLoJ2l89Hq/RDdia0eHHW9QgsCspYzxXb+UcoXb3HB5GuWGqK5N+nB92TNHdDckB67WU
-tuYE0XTkqw==</DigestValue></Reference></SignedInfo><SignatureValue>OmZ75Wf+5iIMNoTy+Jmcf6/cfTcfsHEQAtaojL9DJLpEVdZoSxiiILybsP4XOcBlGjgB9rRtyIbl
-yjcTRiBYFawTPILuHGMiw1ZyCknSZcGpWS7HiGDTNfX+5i91SeYK+NZ9LZvWSWVciWelAQ3QFTSo
-DhifOQ7cLNTiw903L06OLYZbcZ2JX16xUX1XRV/ieCHv4w/SGKTWcbhqKFXq8enLLQloGZEKfEQh
-LGe5/FZgutd8Ml2pl1TZX7FOS3Kgsc7ySjj2EYScPokK9kM9byUyXA3IL+UTW6oGEtC28p5caBl0
-AcJS2nbt3fMciN8IX6PbPu7hYTDuf6bb9ju0cQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_88c4b847-28b6-470d-8be6-7c6591c70159"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Q/18C/1IoXfk+0PNKPdZyWgdHCV/aMBt8Q0dpiPpoBUvY5iqQDvhjleQevvkpYxyIRfHF0rHUqOK
+089N6vuu/w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ec2f3706-85e7-40a5-97ec-8b9e8a43a644"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>QVzJTRtISvLZ1IDNvt9OaOnGSPtwm4af/gPShBEk06th2RodsHYU8ywtEQOMxf9sRASafG9c98IY
+SxDWQreLFg==</DigestValue></Reference></SignedInfo><SignatureValue>R4fMAfUiDbZhuk9fOvRbgI/sBgyR9uLFyrN98wJOmqQiUY5MRc3EPOhzN23eov7VGaZ14KZ/dt9d
+Dqd5liNV3mlGNKzkxq7Un9QQCPuQbVJR9au0FGIYbMILPHghUfxf4Lyqe5bq/UGqZ4pX1wr9ANlN
+mo1D9zdgoTGgU80z7pu9sAaWDveRqcfR59XH+v+V9OizyLMp+4t+OKRJoO3MLk3v5lD3jmo92z7J
+VuvTTIs110a1fv9k3ThXPBDnYuDaxKj+KUteyydWXSCjAYQA4jaFG41TWM7vACbpAnE0I9CH22OF
+NiF7gy/XpRt+o4FqTmaFT9in2Tihcp+mnWSprg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -361,4 +364,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_902427ad-68fb-4d92-ac2c-86ac4416f8f9" Target="#_8b3d9e42-765c-4ba2-b5e0-bc9820405283"><Timestamp>2019-05-16 21:20:56</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ec2f3706-85e7-40a5-97ec-8b9e8a43a644" Target="#_88c4b847-28b6-470d-8be6-7c6591c70159"><Timestamp>2019-05-16 21:24:31</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
