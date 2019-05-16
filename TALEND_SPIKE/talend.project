@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
-  <TalendProperties:Project xmi:id="_mpJHIXgIEeml89_n76RR8Q" label="talend_spike" description="POC spike for CI + integration patterns" language="java" technicalLabel="TALEND_SPIKE" author="_mpJHIngIEeml89_n76RR8Q" productVersion="Talend Cloud Real-Time Big Data Platform-7.1.1.20181026_1147" url="{&quot;location&quot;:&quot;https://github.com/marlenabowen/talend_spike.git&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DQ" bigData="false">
+  <TalendProperties:Project xmi:id="_mpJHIXgIEeml89_n76RR8Q" label="talend_spike" description="POC spike for CI + integration patterns" language="java" technicalLabel="TALEND_SPIKE" author="_mpJHIngIEeml89_n76RR8Q" productVersion="Talend Cloud Real-Time Big Data Platform-7.1.1.20181026_1147" url="{&quot;location&quot;:&quot;https://github.com/marlenabowen/talend_spike.git&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DQ" itemsRelationVersion="1.3" bigData="false">
     <migrationTask xmi:id="_nNHW4HgIEeml89_n76RR8Q" id="org.talend.repository.model.migration.CheckProductVersionMigrationTask" breaks="7.1.0" version="7.1.1"/>
   </TalendProperties:Project>
   <TalendProperties:User xmi:id="_mpJHIngIEeml89_n76RR8Q" login="davidmcgrath@nfr.slalom.com" firstName="DAVID" lastName="MCGRATH" type="DQ"/>
-  <TalendProperties:User xmi:id="_Bu_7wngJEeml89_n76RR8Q" login="marlenabowen@nfr.slalom.com" firstName="Marlena" lastName="Bowen" type="DQ"/>
+  <TalendProperties:User xmi:id="_7ejRYngIEeml89_n76RR8Q" login="marlenabowen@nfr.slalom.com" firstName="Marlena" lastName="Bowen" type="DQ"/>
 </xmi:XMI>

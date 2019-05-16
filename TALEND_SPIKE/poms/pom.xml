@@ -10,6 +10,7 @@
   <url>http://www.talend.org/</url>
   <modules>
     <module>code/routines</module>
+    <module>jobs/process/Salesforce/syncapi_example1_0.1</module>
   </modules>
   <properties>
     <talend.project.name>TALEND_SPIKE</talend.project.name>
