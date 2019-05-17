@@ -203,15 +203,4 @@
     "version" : "Latest",
     "type" : "schema"
   } ]
-}, {
-  "baseItem" : {
-    "id" : "_VLaxIHi6Eemswc84LDn1fA",
-    "version" : "0.1",
-    "type" : "test_case"
-  },
-  "relatedItems" : [ {
-    "id" : "_ZqQZYHgJEeml89_n76RR8Q",
-    "version" : "0.1",
-    "type" : "test_case"
-  } ]
 } ]
