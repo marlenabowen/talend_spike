@@ -331,6 +331,8 @@
   </node>
   <node componentName="tFileInputJSON" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="416">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputJSON_1"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_noI-oHgLEeml89_n76RR8Q - metadata"/>
     <elementParameter field="CLOSED_LIST" name="READ_BY" value="JSONPATH"/>
     <elementParameter field="CLOSED_LIST" name="JSON_PATH_VERSION" value="2_1_0"/>
     <elementParameter field="CHECK" name="USEURL" value="false"/>
@@ -339,15 +341,15 @@
     <elementParameter field="TEXT" name="LOOP_QUERY" show="false" value="&quot;/bills/bill/line&quot;"/>
     <elementParameter field="TEXT" name="JSON_LOOP_QUERY" value="&quot;$&quot;"/>
     <elementParameter field="TABLE" name="MAPPING" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="body"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="val"/>
       <elementValue elementRef="QUERY" value=""/>
     </elementParameter>
     <elementParameter field="TABLE" name="MAPPING_JSONPATH">
-      <elementValue elementRef="SCHEMA_COLUMN" value="body"/>
-      <elementValue elementRef="QUERY" value="&quot;$&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="val"/>
+      <elementValue elementRef="QUERY" value="&quot;val&quot;"/>
     </elementParameter>
     <elementParameter field="TABLE" name="MAPPINGXPATH" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="body"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="val"/>
       <elementValue elementRef="QUERY" value=""/>
       <elementValue elementRef="NODECHECK" value="false"/>
     </elementParameter>
@@ -359,11 +361,11 @@
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tFileInputJSON_1">
-      <column comment="" key="false" length="-1" name="body" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputJSON_1">
+      <column comment="" key="false" length="-1" name="val" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
     </metadata>
-    <metadata connector="REJECT" name="REJECT">
-      <column comment="" key="false" length="-1" name="body" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" key="false" length="-1" name="val" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -382,15 +384,15 @@
     <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
     <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
     <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="body"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="val"/>
       <elementValue elementRef="LENGTH" value="10"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="LABEL" value="Log Parsed"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tLogRow_3">
-      <column comment="" key="false" length="-1" name="body" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    <metadata connector="FLOW" label="metadata" name="tLogRow_3">
+      <column comment="" key="false" length="-1" name="val" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="12" offsetLabelY="-82" posX="736" posY="512">
@@ -461,13 +463,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ec49c5ad-3cbd-4560-a44d-7eaa1c9fb09f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>4skLqYy9d1xZol09a3H8gdWvKAS5goyHPmO1mInTeJccmCuxFFmmMygZ5M4H/xcnv+EEBjp3ou81
-EmMHnWrIyg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_948566f2-dc6f-4930-8e17-8edd5d6d767f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>rf6Yq7M32HlzDdvAQYtuypmI73VRGRx/8uGQ8Tl0g9UQAylqrmjVXqzsurl6r7jj4B6pHqYHUSit
-a+xPa2XVXg==</DigestValue></Reference></SignedInfo><SignatureValue>Bxpbh9BPBRzqUrUkDMl71jHkZDQ9c3cOsz/HNmFOzI3PYym3iXuZTt0k/sA3QWQWmN/s3bVWcrAZ
-rmzOtxf37J9FX491vOmHL3iRGSCfRgpYt5ubBVuu1HSJlZRU1PWLKox3v1LTEFc2V5Xl0+n+QzF4
-49K9p4aYTSq1N/X14bRHfa2NYO6VWhurC1R5tMZ73mbAsRxHaGNGwsGGL6w0VaTLf9EzgC3IpKdo
-SsZwqaNM0K5TaeIv/oBMZMg6uQXiQOrjSOMD9/HwWlpcL/G65cSdMFr8A2BBNG7S9GTP9+ZmU7DH
-dlEGaHkSz3dwXgDqnfNUhr756a7RYLOih6v4fA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f83b62c3-6456-4e54-bdd4-f7a80ee3606f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ezEs+ybsFoOEsl59/yuRp8CJw1YUcxcIA6S5LoKEgk6hg9mrhxCuIiBTwDjj3qaP4Jd5MTONSIt+
+4VIdQ7n6Fw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_319c91d5-30f5-41aa-90df-9a9e60287f22"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>yHpJD0vetRgM3x9lpDYcC4zQ3DBitFavaqz50+tProLN2SNeOqA071Qyq/JxcnSeHF0qu6yqBlAO
+FRRet4OrIQ==</DigestValue></Reference></SignedInfo><SignatureValue>g6dFVxTVb3Zn6wJeRphPaCWjgR3pnGLLD3DVNOhEtWZXbkbckB2mIvLfZ3wWhtSK2gEjNX566Ky/
+rSmrE/bXqgN83+tMcjTrrKHpiTcoywiyASTX+5qtxZpv2P5JaHREEGcl8dz0p5oW6C05ciSPDZHf
+MRdsAmGjEdHg+Su2zBUWWnf8tAWu9igyJSdo5r2YZFnn8pXYBaRg/1iCZE318df6txEmICjxywja
+ylk26ji9ILNXm/eKmv9XPcz0MPn6mXERsFr1FVTQiqJ2FZYgaKLUGzW8oiqzCQO0zMwxoyeHPmKH
+JTLZdN/tK+nDIzyVMB66Hfh1l2xLmJAKCpJMEg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -491,4 +493,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_948566f2-dc6f-4930-8e17-8edd5d6d767f" Target="#_ec49c5ad-3cbd-4560-a44d-7eaa1c9fb09f"><Timestamp>2019-05-17 03:50:56</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_319c91d5-30f5-41aa-90df-9a9e60287f22" Target="#_f83b62c3-6456-4e54-bdd4-f7a80ee3606f"><Timestamp>2019-05-17 03:53:19</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
