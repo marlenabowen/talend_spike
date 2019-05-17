@@ -11,7 +11,7 @@
   <modules>
     <module>code/routines</module>
     <module>jobs/process/Salesforce/purchasecommitments_0.1</module>
-    <module>jobs/process/Salesforce/purchasecommitmentline_validate_0.1</module>
+    <module>jobs/process/purchasecommitmentline_validate_0.1</module>
   </modules>
   <properties>
     <talend.project.name>TALEND_SPIKE</talend.project.name>
