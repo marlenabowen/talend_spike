@@ -10,11 +10,11 @@
   <url>http://www.talend.org/</url>
   <modules>
     <module>code/routines</module>
-    <module>jobs/process/purchasecommitmentline_validate_0.1</module>
     <module>jobs/joblets/purchasecommitmentline_checkjson_0.1</module>
     <module>jobs/routes/purchasecommitmentline_0.1</module>
     <module>jobs/services/test_0.1</module>
     <module>jobs/process/PurchaseCommitment/purchasecommitments_0.1</module>
+    <module>jobs/process/PurchaseCommitment/purchasecommitmentline_validate_0.1</module>
   </modules>
   <properties>
     <talend.project.name>TALEND_SPIKE</talend.project.name>
