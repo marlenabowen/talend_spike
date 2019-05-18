@@ -206,6 +206,10 @@
     "type" : "job"
   },
   "relatedItems" : [ {
+    "id" : "_A5fn0HmxEemAUZPzAKMwtw",
+    "version" : "Latest",
+    "type" : "joblet"
+  }, {
     "id" : "DQTechnical",
     "version" : "Latest",
     "type" : "routine"
@@ -265,10 +269,6 @@
     "id" : "TalendStringUtil",
     "version" : "Latest",
     "type" : "routine"
-  }, {
-    "id" : "_noI-oHgLEeml89_n76RR8Q - metadata",
-    "version" : "Latest",
-    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
