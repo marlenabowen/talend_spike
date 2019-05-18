@@ -9,15 +9,15 @@
     <relativePath>../../../../</relativePath>
   </parent>
   <groupId>org.example.talend_spike.service</groupId>
-  <artifactId>PurchaseCommitments-bundle</artifactId>
+  <artifactId>LineValues-bundle</artifactId>
   <version>0.1.0</version>
   <packaging>bundle</packaging>
-  <name>TALEND_SPIKE PurchaseCommitments-0.1.0 (0.1,Job Designs) Bundle</name>
+  <name>TALEND_SPIKE LineValues-0.1.0 (0.1,Job Designs) Bundle</name>
   <properties>
     <item.name>@ItemName@</item.name>
     <bundle.config.export.service>@BundleConfigExportService@</bundle.config.export.service>
     <bundle.config.bundle.classpath>@BundleConfigBundleClasspath@</bundle.config.bundle.classpath>
-    <talend.job.name>PurchaseCommitments</talend.job.name>
+    <talend.job.name>LineValues</talend.job.name>
     <current.test.resources.dir>${basedir}/src/test/resources</current.test.resources.dir>
     <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
     <talend.project.name>TALEND_SPIKE</talend.project.name>
@@ -32,7 +32,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
     <talend.routine.groupid>org.example.talend_spike.code</talend.routine.groupid>
-    <talend.job.folder>salesforce/</talend.job.folder>
+    <talend.job.folder>purchasecommitment/</talend.job.folder>
     <bundle.config.import.package>@BundleConfigImportPackage@</bundle.config.import.package>
     <talend.job.id>_ZqQZYHgJEeml89_n76RR8Q</talend.job.id>
     <talend.project.name.lowercase>talend_spike</talend.project.name.lowercase>
@@ -41,7 +41,7 @@
     <project.distribution-management.repository.id>${project.distributionManagement.repository.id}</project.distribution-management.repository.id>
     <talend.job.version>0.1</talend.job.version>
     <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
-    <talend.job.path>talend_spike/purchasecommitments_0_1</talend.job.path>
+    <talend.job.path>talend_spike/linevalues_0_1</talend.job.path>
     <talend.job.context>Prod</talend.job.context>
     <talend.job.stat>true</talend.job.stat>
     <talend.pigudf.groupid>org.example.talend_spike.pigudf</talend.pigudf.groupid>
