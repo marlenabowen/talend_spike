@@ -16,8 +16,8 @@
     <module>jobs/process/PurchaseCommitment/purchasecommitmentline_validate_0.1</module>
     <module>jobs/joblets/common/esbeventlogger_0.1</module>
     <module>jobs/joblets/PurchaseCommitment/linevalidator_0.1</module>
-    <module>jobs/process/PurchaseCommitment/lineentry_0.1</module>
     <module>jobs/process/PurchaseCommitment/original_0.1</module>
+    <module>jobs/process/PurchaseCommitment/lineitemvalidation_0.1</module>
   </modules>
   <properties>
     <talend.project.name>TALEND_SPIKE</talend.project.name>
