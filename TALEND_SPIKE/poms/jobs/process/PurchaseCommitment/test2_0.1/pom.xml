@@ -462,6 +462,12 @@
       <artifactId>routines</artifactId>
       <version>7.1.1</version>
     </dependency>
+    <dependency>
+      <groupId>org.example.talend_spike.joblet</groupId>
+      <artifactId>EsbEventLogger</artifactId>
+      <version>0.1.0</version>
+      <type>pom</type>
+    </dependency>
   </dependencies>
   <build>
     <plugins>
