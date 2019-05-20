@@ -18,7 +18,7 @@
     <module>jobs/joblets/PurchaseCommitment/linevalidator_0.1</module>
     <module>jobs/process/PurchaseCommitment/original_0.1</module>
     <module>jobs/process/PurchaseCommitment/lineitemvalidation_0.1</module>
-    <module>jobs/process/PurchaseCommitment/test2_0.1</module>
+    <module>jobs/process/PurchaseCommitment/syncronousdatarequest_v1_0.1</module>
   </modules>
   <properties>
     <talend.project.name>TALEND_SPIKE</talend.project.name>
