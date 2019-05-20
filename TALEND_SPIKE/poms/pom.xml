@@ -20,7 +20,7 @@
     <module>jobs/process/PurchaseCommitment/lineitemvalidation_0.1</module>
     <module>jobs/joblets/lessthanminimum_0.1</module>
     <module>code/pigudf</module>
-    <module>jobs/process/PurchaseCommitment/validate_v1_0.1</module>
+    <module>jobs/process/PurchaseCommitment/fieldvalidator_0.1</module>
   </modules>
   <properties>
     <talend.project.name>TALEND_SPIKE</talend.project.name>
