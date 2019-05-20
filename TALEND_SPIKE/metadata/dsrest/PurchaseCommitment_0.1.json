@@ -1,0 +1,69 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "No description",
+    "version" : "1.0.0",
+    "title" : "PurchaseCommitment",
+    "contact" : { }
+  },
+  "host" : "h1bhi3t.us.api-mocks.com",
+  "schemes" : [ "https" ],
+  "consumes" : [ "application/json" ],
+  "produces" : [ "application/json" ],
+  "paths" : {
+    "/validation" : {
+      "post" : {
+        "summary" : "validation",
+        "consumes" : [ ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "required" : true,
+          "schema" : {
+            "type" : "object",
+            "properties" : {
+              "Quant" : {
+                "type" : "integer"
+              },
+              "SKU" : {
+                "type" : "string"
+              }
+            }
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Status 200"
+          }
+        }
+      },
+      "parameters" : [ ]
+    },
+    "/validation/{companyid}/{sku}/{quantity}" : {
+      "get" : {
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "Status 200"
+          }
+        }
+      },
+      "parameters" : [ {
+        "name" : "companyid",
+        "in" : "path",
+        "required" : true,
+        "type" : "string"
+      }, {
+        "name" : "sku",
+        "in" : "path",
+        "required" : true,
+        "type" : "string"
+      }, {
+        "name" : "quantity",
+        "in" : "path",
+        "required" : true,
+        "type" : "string"
+      } ]
+    }
+  }
+}
