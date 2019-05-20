@@ -1,0 +1,12 @@
+// created on: May 20, 2019
+$package$
+// list any import classes here.
+$import$
+import java.util.ArrayList
+import java.util.HashMap
+import java.lang.Integer 
+// declare any global variables here
+global ArrayList list
+global HashMap globalMap
+
+
