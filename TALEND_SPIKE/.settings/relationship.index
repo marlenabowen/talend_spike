@@ -399,6 +399,10 @@
     "id" : "TalendStringUtil",
     "version" : "Latest",
     "type" : "routine"
+  }, {
+    "id" : "_5L5OwHt4EemBlfWrQGMWBw - metadata",
+    "version" : "Latest",
+    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
@@ -966,16 +970,5 @@
     "id" : "TalendStringUtil",
     "version" : "Latest",
     "type" : "routine"
-  } ]
-}, {
-  "baseItem" : {
-    "id" : "_6xqaEHt1EemBlfWrQGMWBw",
-    "version" : "0.1",
-    "type" : "test_case"
-  },
-  "relatedItems" : [ {
-    "id" : "_Okp_EHtYEemBlfWrQGMWBw",
-    "version" : "0.1",
-    "type" : "test_case"
   } ]
 } ]
