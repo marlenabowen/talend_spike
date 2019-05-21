@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2019-05-20T21:58:19.917-0600">
+<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2019-05-20T21:58:22.728-0600">
   <deletedFolders>process/Salesforce</deletedFolders>
   <deletedFolders>metadata/json/Salesforce</deletedFolders>
   <deletedFolders>metadata/json/PurchaseCommitment</deletedFolders>
@@ -23,4 +23,5 @@
   <deletedItems id="_REUGEHmwEemAUZPzAKMwtw" path="common" type="JOBLET"/>
   <deletedItems id="_A5fn0HmxEemAUZPzAKMwtw" path="/PurchaseCommitment" type="JOBLET"/>
   <deletedItems id="_r8K3MHtOEemBlfWrQGMWBw" path="" type="JOBLET"/>
+  <deletedItems id="_Ev9zEHtyEemBlfWrQGMWBw" path="" type="JOBLET"/>
 </recyclebin:RecycleBin>
